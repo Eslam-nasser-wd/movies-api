@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  form(method="POST", action="add", class="adding-movie")
+    h1 Add
+    .form-group
+      .label-control Title
+      input(class="form-control", name="movieTitle", required)
+    .form-group
+      .label-control Year
+      input(class="form-control", name="movieYear", required)
+    .form-group
+      .label-control Runtime
+      input(class="form-control", name="movieRuntime", required)
+    .form-group
+      .label-control Genre
+      input(class="form-control", name="movieGenre", required)
+    .form-group
+      .label-control Plot
+      input(class="form-control", name="moviePlot", required)
+    .form-group
+      .label-control Poster
+      input(class="form-control", name="moviePoster", required)
+    input(class="btn btn-danger btn-block", type="submit")
