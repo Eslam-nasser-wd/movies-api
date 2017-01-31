@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
   })
 });
 
-router.get('/:movie_id', function(req, res, next) {
+router.get('/id/:movie_id', function(req, res, next) {
   Movie.findById(req.params.movie_id)
     .exec(function(err, data){
 
